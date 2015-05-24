@@ -7,13 +7,13 @@ Scrapy project to scrape, filter and download latest pastes from pastebin.com.
     cd scrapy-pastebin-latest
     scrapy crawl pastebin_latest -o latest-pastes.csv
 ####Config
-Settings located in pastebin/settings.py.
+Settings is located in pastebin/settings.py.
 
 Filter settings:
 ```python
 REGEXES = [r'word', r'another one']
 ```
-Folder to store pastes content
+Folder to store pastes content:
 ```python
 FILES_STORE = '/home/user/pastes'
 ```
