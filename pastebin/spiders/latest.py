@@ -57,7 +57,7 @@ class BasicSpider(scrapy.Spider):
         l.add_css('text', 'textarea#paste_code::text')
         l.add_xpath('text', 'string(//*[@id="selectable"]/div)')
         l.add_css('title', '.paste_box_line1 h1::text')
-        l.add_css('syntax', '.paste_box_line2 a::text')
+        l.add_css('syntax', '.paste_box_line2 a:last-of-type::text')
         l.add_css('creation_date', '.paste_box_line2 span::attr(title)')
 
         return l.load_item()
