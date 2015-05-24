@@ -7,7 +7,7 @@ Scrapy project to scrape, filter and download latest pastes from pastebin.com.
     cd scrapy-pastebin-latest
     scrapy crawl pastebin_latest -o latest-pastes.csv
 ####Config
-pastebin/settings.py:
+Settings located in pastebin/settings.py.
 
 Filter settings:
 ```python
